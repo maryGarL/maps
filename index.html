@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>Document</title>
 </head>
 <body>
-  <section>
-    <div id="map">
+  <section id="nav">
+    <div class="row">
+      <div class="col-sm-4 form-inline"><span class="glyphicon glyphicon-record"> </span><input id="partida" type="text" name="" value="" placeholder="Punto de partida"></div>
+      <div class="col-sm-4 form-inline"><span class="glyphicon glyphicon-send"> </span><input  id="destino"type="text" name="" value=""placeholder="Punto de destino"></div>
+      <div class="col-sm-2 form-inline"> <button id="ruta" class="btn-primary" type="button" name="button">Trazar ruta</button></div>
+      <div class="col-sm-2 form-inline"> <button id="encuentrame" class="btn-primary" type="button" name="button">Encuentrame</button></div>
+
     </div>
   </section>
   <section>
-    <button id="encuentrame"type="button" name="button">encuentrame</button>
+    <div id="map">
+    </div>
+    <div id="tarifa"class="none">
+
+    </div>
   </section>
-  <!-- <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhY4G2Nj2EEVInLneRfZLepRjrIBBPkdg&callback=initMap"></script> -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV_uq58nCqrersBX4UY5cIzMbR2aRUbiM&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV_uq58nCqrersBX4UY5cIzMbR2aRUbiM&callback=initMap&libraries=places">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
